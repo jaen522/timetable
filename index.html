@@ -14,29 +14,27 @@
             overflow: hidden;
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
-            height: 100%; /* 전체 화면 높이를 기준으로 */
+            height: 100%;
         }
         .slide-container {
             display: flex;
             flex-direction: column;
-            height: 100%; /* 부모 높이에 맞추기 */
+            height: 100%;
             overflow-y: auto;
             scroll-behavior: smooth;
-            gap: 1px; /* 슬라이드 간의 간격을 작게 설정 */
-            padding-bottom: 10px; /* 마지막 슬라이드 아래 여백 추가 */
+            gap: 0; /* 슬라이드 간 간격을 0으로 설정 */
         }
         .slide {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* 모바일 뷰포트 높이를 기반으로 */
-            flex-shrink: 0; /* 슬라이드 높이가 줄어들지 않도록 설정 */
-            
+            height: 100vh;
+            flex-shrink: 0;
         }
         .slide img {
-            width: 100%; /* 모바일 화면에 가로로 맞추기 */
-            height: auto; /* 높이는 비율에 맞춰 자동 조정 */
-            object-fit: contain; /* 이미지 비율을 유지하면서 잘리지 않게 조정 */
+            width: 100%;
+            height: 100%; /* 슬라이드 높이에 맞추기 */
+            object-fit: cover; /* 이미지를 슬라이드에 꽉 채우기 */
         }
     </style>
 </head>
@@ -64,3 +62,4 @@
     </div>
 </body>
 </html>
+
