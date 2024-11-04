@@ -14,50 +14,26 @@
             overflow: hidden;
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
-            height: auto;
+            height: 100%;
         }
         .slide-container {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            overflow-y: auto;
-            scroll-behavior: smooth;
-            gap: 0;
-        }
-        .slide {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            flex-shrink: 0;
+            overflow: hidden;
         }
         .slide img {
             width: 100vw; /* 화면의 가로 너비에 맞추기 */
-            height: 100vh; /* 세로 비율을 유지하면서 자동 조정 */
-            object-fit: cover; /* 이미지 비율을 유지하면서 슬라이드를 채우도록 */
+            height: auto; /* 세로 비율을 유지하면서 자동 조정 */
         }
     </style>
 </head>
 <body>
     <div class="slide-container">
-        <!-- 슬라이드 1 -->
+        <!-- 하나의 이미지 슬라이드 -->
         <div class="slide">
-            <img src="images/202400.jpg" alt="Image 1">
-        </div>
-        
-        <!-- 슬라이드 2 -->
-        <div class="slide">
-            <img src="images/202401.jpg" alt="Image 2">
-        </div>
-
-        <!-- 슬라이드 3 -->
-        <div class="slide">
-            <img src="images/202402.jpg" alt="Image 3">
-        </div>
-        
-        <!-- 슬라이드 4 -->
-        <div class="slide">
-            <img src="images/202403.jpg" alt="Image 4">
+            <img src="images/2024.jpg" alt="Image 1">
         </div>
     </div>
 </body>
