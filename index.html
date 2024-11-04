@@ -22,7 +22,7 @@
             height: 100%;
             overflow-y: auto;
             scroll-behavior: smooth;
-            gap: 0; /* 슬라이드 간격 없애기 */
+            gap: 0;
         }
         .slide {
             display: flex;
@@ -32,9 +32,10 @@
             flex-shrink: 0;
         }
         .slide img {
-            width: 100%; /* 모바일 화면 가로에 맞추기 */
-            height: auto; /* 비율을 유지하면서 자동으로 높이 조정 */
-          
+            width: auto; /* 가로 비율을 자동으로 조정 */
+            height: 100vh; /* 슬라이드 높이를 가득 채우기 */
+            max-width: 100%; /* 가로 크기가 화면을 넘지 않도록 제한 */
+            object-fit: cover; /* 이미지 비율을 유지하면서 슬라이드를 채우도록 */
         }
     </style>
 </head>
